@@ -43,13 +43,12 @@ public class MetaGeneratedGregtechTools extends GT_MetaGenerated_Tool {
 
 
 		// Electric Wire Cutter
-		GregTech_API.registerTool(
 				this.addTool(ELECTRIC_SNIPS, "Automatic Snips", "Hand-held electric wire cutter",
 						new TOOL_Gregtech_ElectricSnips(),
 						new Object[] { GregtechToolDictNames.craftingToolElectricSnips, ToolDictNames.craftingToolWireCutter,
 								new TC_Aspects.TC_AspectStack(TC_Aspects.INSTRUMENTUM, 4L),
 								new TC_Aspects.TC_AspectStack(TC_Aspects.FABRICO, 4L),
-								new TC_Aspects.TC_AspectStack(TC_Aspects.ORDO, 4L) }), GregTech_API.sWireCutterList);
+								new TC_Aspects.TC_AspectStack(TC_Aspects.ORDO, 4L) });
 
 
 		// Electric Lighter
