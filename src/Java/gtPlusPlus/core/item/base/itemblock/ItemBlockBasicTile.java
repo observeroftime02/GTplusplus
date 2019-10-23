@@ -44,6 +44,7 @@ public class ItemBlockBasicTile extends ItemBlock {
 			list.add("Kills Forestry Butterflies, Bats and other pests");
 			list.add("Use either Formaldehyde or Hydrogen cyanide");
 			list.add("Be weary of your neighbours");
+		} else if (this.mID == 7) {
 		} else {
 			list.add("Bad Tooltip ID - " + mID);
 
