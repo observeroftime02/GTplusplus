@@ -38,24 +38,6 @@ public final class MISC_MATERIALS {
 					new MaterialStack(ELEMENT.getInstance().OXYGEN, 1)
 			});
 
-	public static final Material STRONTIUM_HYDROXIDE = new Material(
-			"Strontium Hydroxide", 
-			MaterialState.SOLID, 
-			TextureSet.SET_METALLIC,
-			null,
-			-1,
-			-1,
-			-1,
-			-1, 
-			false, 
-			"Sr(OH)2",
-			0, 
-			false,
-			new MaterialStack[]{
-					new MaterialStack(ELEMENT.getInstance().STRONTIUM, 1),
-					new MaterialStack(MISC_MATERIALS.HYDROXIDE, 2)
-			});
-
 	public static final Material SELENIUM_DIOXIDE = new Material(
 			"Selenium Dioxide",
 			MaterialState.PURE_LIQUID, //State
@@ -101,6 +83,21 @@ public final class MISC_MATERIALS {
 					new MaterialStack(ELEMENT.getInstance().HYDROGEN, 1),
 					new MaterialStack(ELEMENT.getInstance().CARBON, 1),
 					new MaterialStack(ELEMENT.getInstance().NITROGEN, 1)
+			});
+
+	public static final Material CARBON_MONOXIDE = new Material(
+			"Carbon Monoxide",
+			MaterialState.PURE_LIQUID, //State
+			null, //Material Colour
+			-1, //Melting Point in C
+			-1, //Boiling Point in C
+			-1, //Protons
+			-1,
+			false, //Uses Blast furnace?
+			//Material Stacks with Percentage of required elements.
+			new MaterialStack[]{
+					new MaterialStack(ELEMENT.getInstance().CARBON, 1),
+					new MaterialStack(ELEMENT.getInstance().OXYGEN, 1)
 			});
 
 	public static final Material CARBON_DIOXIDE = new Material(
@@ -286,6 +283,24 @@ public final class MISC_MATERIALS {
 			new MaterialStack[]{
 					new MaterialStack(SALT_WATER, 1),
 					new MaterialStack(SODIUM_CHLORIDE, 2),
+			});
+
+	public static final Material STRONTIUM_HYDROXIDE = new Material(
+			"Strontium Hydroxide", 
+			MaterialState.SOLID, 
+			TextureSet.SET_METALLIC,
+			null,
+			-1,
+			-1,
+			-1,
+			-1, 
+			false, 
+			"Sr(OH)2",
+			0, 
+			false,
+			new MaterialStack[]{
+					new MaterialStack(ELEMENT.getInstance().STRONTIUM, 1),
+					new MaterialStack(MISC_MATERIALS.HYDROXIDE, 2)
 			});
 
 

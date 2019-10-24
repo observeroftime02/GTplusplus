@@ -39,6 +39,9 @@ public enum GregtechItemList implements GregtechItemContainer {
 	Emitter_ULV,
 	Sensor_ULV,
 
+	//Recipe Circuit
+	Circuit_BioRecipeSelector,
+	
 	//Circuits
 	Old_Circuit_Primitive, Old_Circuit_Basic, Old_Circuit_Good,
 	Old_Circuit_Advanced, Old_Circuit_Data, Old_Circuit_Elite,
@@ -475,6 +478,10 @@ public enum GregtechItemList implements GregtechItemContainer {
 	Machine_ZPM_Component_Maker,
 	Machine_UV_Component_Maker,
 	
+	// Fluid Reactor
+	FluidReactor_LV, FluidReactor_HV,
+	FluidReactor_IV, FluidReactor_ZPM,
+	
 	//Breakers
 	BreakerBox_ULV, BreakerBox_LV, BreakerBox_MV,
 	BreakerBox_HV, BreakerBox_EV, BreakerBox_IV,
@@ -598,7 +605,7 @@ public enum GregtechItemList implements GregtechItemContainer {
 	FakeMachineCasingPlate_MV, FakeMachineCasingPlate_HV,
 	FakeMachineCasingPlate_EV, FakeMachineCasingPlate_IV,
 	FakeMachineCasingPlate_LuV, FakeMachineCasingPlate_ZPM,
-	FakeMachineCasingPlate_UV, FakeMachineCasingPlate_MAX,
+	FakeMachineCasingPlate_UV, FakeMachineCasingPlate_MAX, 
 	
 
 	//----------------------------------------------------------------------------
@@ -611,7 +618,6 @@ public enum GregtechItemList implements GregtechItemContainer {
 	private ItemStack mStack;
 	private boolean mHasNotBeenSet = true;
 
-	public static Fluid sOilExtraHeavy, sOilHeavy, sOilMedium, sOilLight, sNaturalGas;
 
 	@Override
 	public GregtechItemList set(final Item aItem) {
